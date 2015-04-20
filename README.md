@@ -5,10 +5,10 @@
 This is a basic signup and authentication application built on the MEAN stack and using
 the passport package for authentication. Based on scotch.io tutorial with enhancements.
 This applicaiton supports authentication strategies for :
-- local
-- facebook
-- google
-- twittier
+- Local
+- Facebook
+- Google
+- Twitter
 
 ## Features
 
