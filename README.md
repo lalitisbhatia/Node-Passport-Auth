@@ -40,3 +40,5 @@ First, make sure you have the necessary dependencies installed:
 - [MongoDB](http://www.mongodb.org/downloads)
 
 - to bring up the local instance, run "sh ./rundev.sh"
+
+- DEMO - https://nodeauthlb.herokuapp.com/
