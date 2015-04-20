@@ -1,0 +1,10 @@
+node_modules
+.tmp
+.sass-cache
+.idea
+dist
+/server/config/local.env.js
+/server/config/authConfig.json
+coverage
+*.zip
+*.log

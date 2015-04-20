@@ -1,0 +1,538 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    /*padding-top: 55px;*/
+}
+html,
+body {
+    height: 100%;
+}
+
+/*header {*/
+    /*display: block;*/
+    /*position: relative;*/
+    /*width: auto;*/
+    /*height: auto;*/
+    /*padding: 100px 0;*/
+    /*min-height: 100%;*/
+    /*background: no-repeat center center;*/
+    /*background-attachment: scroll;*/
+    /*background-color: #222;*/
+    /*background-size: cover;*/
+/*}*/
+
+.navbar {
+    margin-bottom: 0px;
+    padding: 10px 5px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.navbar-header a>img{
+    width: 50%;
+    height: 50%;
+    padding: 5px 0px;
+}
+@media (max-width: 200px) {
+    .navbar-header{
+    position:relative;
+    }
+
+    .navbar img{
+        position: absolute;
+        top:0;
+        bottom: 0;
+        margin:auto;
+        width: 70%;
+    }
+}
+@media (max-width:768px) {
+    #top{
+        display: none;
+    }
+    .navbar-nav>li{
+        display: inline-block;
+        padding-bottom: 30px;
+        border-right: groove ;
+        border-color: #080808;
+    }
+    .navbar-nav>li>a{
+        color: #bbb;
+    }
+    .nav>li>a:focus{
+        background-color: inherit;
+        color: #006399;
+    }
+}
+@media (min-width:768px) {
+    #navBot{
+        display: none;
+    }
+}
+.navbar-inverse .navbar-nav>li>a{
+    color: #bbb;
+}
+.img-responsive{
+    margin:0px auto;
+    border: 2px solid darkcyan;
+    box-shadow: rgba(0,0,0,0.5) 10px 10px 60px;
+}
+.fill-screen{
+    background-size: cover;
+    background-position: center;
+}
+.title-row{
+    position: relative;
+    min-height: 300px;
+}
+.title-image{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: none;
+    opacity: .7;
+    margin-right: -50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+}
+.down-button{
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    text-align: center;
+}
+.down-button i {
+    color: #ffffff;
+}
+.content-filler{
+    min-height: 350px;
+}
+.fixed-attachment{
+    background-attachment: fixed;
+}
+@media (max-width:1024px){
+    .fixed-attachment{
+        background-attachment: scroll;
+    }
+
+}
+.cbp-af-header-shrink{
+    padding-top:5px;
+    padding-bottom: 5px;
+    opacity: 0.9;
+}
+
+header,footer{
+    background-color : #333;
+    color : #ddd;
+    padding : 20px;
+    text-align : center;
+}
+
+aside{
+    background-color: rgba(8, 53, 73, 0.43);
+    text-align: center;
+    padding: 20px 30px;
+
+}
+.range-list{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.range-list h4{
+    margin-bottom: 40px;
+    color : darkorange;
+    font-weight: bold;
+}
+.range-list img {
+    width: 100%;
+    height: 100%;
+    max-width: 140px;
+    max-height: 60px;
+}
+.range-list span{
+    font-weight: 800;
+}
+.range-title {
+    color : #ffffff;
+    margin-top: 30px;
+}
+.sports-icon-list {
+    background-color: #333;
+    padding-bottom: 40px;
+}
+.sports-icon-list a {
+    color : #ffffff;
+}
+.sports-icon-list a h6{
+    margin-top: 2px;
+    margin-bottom: 14px;
+}
+.sports-icon-list img{
+    width : 70px;
+    height: 70px;
+}
+.sports-list-top div{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.sports-list-top a{
+    margin-right: 30px;
+    margin-left: 30px;
+    display: inline-block;
+}
+
+article{
+    padding : 40px;
+    text-align: center;
+}
+article img{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    box-shadow: 6px 6px 8px #777;
+}
+article p{
+    font-size: 16px;
+}
+
+/* for content rows*/
+.text-banner{
+    text-align: center;
+    margin:40px 20px;
+}
+.text-banner h1{
+    font-size: 44px;
+}
+.text-banner p{
+    font-size: 18px;
+}
+
+.activity-section{
+    margin: 50px;
+}
+.activity-element{
+    text-align: center;
+}
+.activity-element img{
+    width: 150px;
+    height: 150px;
+}
+.contact-us{
+    margin: 50px;
+    text-align: center;
+}
+
+#carousel{
+    margin :40px 0px;
+}
+#carousel img{
+    width: 100%;
+    height: auto;
+}
+
+/*
+    following code is used to create same-sized column layout in a multi-column layout
+    Code from  - http://www.minimit.com/articles/solutions-tutorials/bootstrap-3-responsive-columns-of-same-height
+*/
+
+/* columns of same height styles */
+.container-xs-height{
+    display: table;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.row-xs-height{
+    display: table-row;
+}
+.col-xs-height{
+    display: table-cell;
+    float: none;
+}
+
+@media (min-width: 768px) {
+    .container-sm-height{
+        display: table;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .row-sm-height{
+        display: table-row;
+    }
+    .col-sm-height{
+        display: table-cell;
+        float: none;
+    }
+}
+@media (min-width: 992px) {
+    .container-md-height{
+        display: table;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .row-md-height{
+        display: table-row;
+    }
+    .col-md-height{
+        display: table-cell;
+        float: none;
+    }
+}
+@media (min-width: 1200px) {
+    .container-lg-height{
+        display: table;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .row-lg-height{
+        display: table-row;
+    }
+    .col-lg-height{
+        display: table-cell;
+        float: none;
+    }
+}
+@media (min-width: 992px){
+    .row-forms{
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+}
+
+.range-list-div{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.loginPanel-responsive{
+    margin:0px auto;
+    box-shadow: rgba(0,0,0,0.5) 10px 10px 10px;
+}
+@media (min-width: 768px) {
+    .loginPanel,.profilePanel {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        opacity: .8;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+    }
+}
+@media (max-width: 768px) {
+    .loginPanel,.profilePanel {
+        width: 100%;;
+        opacity: .8;
+
+    }
+}
+
+.loginPanel>aside{
+    background-color: rgba(0, 0, 0, 0.85);
+    /*height: 265px;*/
+}
+.signup-panel >aside{
+    padding: 30px 50px;
+}
+
+
+.signup-bot{
+    background-color: rgba(0, 0, 0, 1);
+    height: 45px;
+    text-align: center;
+    font-size: 29px;
+    border-top: 1px ridge rgba(224, 180, 153, 0.75);
+
+}
+.signup-bot p{
+    font-size: 18px;
+    font-weight: 800;
+    color: rgb(22, 198, 221)
+}
+#signupForm > div >input{
+    width: 250px;
+}
+.input-wide{
+    width: 250px;
+}
+
+.input-med{
+    width: 200px;
+}
+
+@media (max-width: 768px){
+    .input-small{
+        width: 95px;
+        display:inline;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+@media (min-width: 768px){
+    .input-small{
+        width: 90px;
+        display:inline;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+@media (min-width: 768px) {
+    .loginPanel>aside:first-child{
+        border-right: 2px groove rgba(224, 180, 153, 0.75);
+    }
+}
+
+@media (max-width: 768px) {
+    .loginPanel>aside:first-child{
+        border-bottom: 2px groove rgba(224, 180, 153, 0.75);
+    }
+}
+
+.loginPanel>aside>div{
+    padding: 0px 0px;
+}
+.forgot-password{
+    padding-top: 30px;
+}
+.login-button{
+    width:150px;
+    font-weight: 800;
+}
+.login-button-ext{
+    width:195px;
+    font-weight: 800;
+}
+.login-links{
+    font-weight: 800;
+    color: rgb(22, 198, 221)
+}
+
+@media (max-width: 768px) {
+    .down-button{
+        display: none;
+    }
+}
+
+.val-error-msg{
+    widows: inherit;
+    max-width: 250px;
+}
+.val-error-msg > h4 {
+    text-align: left;
+    font-size:14px;
+    padding-bottom: 0px;
+    padding-top: 5px;
+    padding-left: inherit;
+    margin: 0px;
+    color: rgba(253, 199, 203, 1);
+    font-weight: 900;
+}
+
+/* Profile page*/
+
+.profilePanel{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: .8;
+    margin-right: -50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+}
+
+.profilePanel-responsive, .homePanel-responsive{
+    box-shadow: rgba(0,0,0,0.5) 10px 10px 10px;
+}
+
+@media (max-width: 768px) {
+    .profilePanel>aside{
+        background-color: rgba(0, 0, 0, 0.55);
+        height: 400px;
+        width: auto;
+    }
+    .profilePanelRange-list{
+        position: relative;
+        top: 35%;
+
+    }
+}
+
+@media (min-width: 768px) {
+    .profilePanel>aside{
+        background-color: rgba(0, 0, 0, 0.55);
+        height: 400px;
+        width: 300px;
+    }
+    .profilePanelRange-list{
+        position: relative;
+        top: 50%;
+
+    }
+}
+
+
+.profilePanel>aside>div{
+    padding: 0px 0px;
+}
+/* Form group*/
+.form-group{
+    display: inline-block;
+}
+
+.placeholderclass::before{
+    /*width:100%;*/
+    content:'B\'day - ';
+    background-color:#FFFFFF;
+}
+
+/* Home page*/
+
+.homePanel{
+    position: absolute;
+    width: 100%;
+    opacity: .3;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+}
+@media (max-width: 768px) {
+
+    .homePanel>aside{
+        padding-top: 50px;
+        position: absolute;
+        height: 600px;
+        width: 100%;
+        top: 55%;
+        left: 50%;
+        background-color: rgba(0, 0, 0, 0.85);
+    }
+    .homePanelRange-list{
+        position: relative;
+        top: 35%;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .homePanel>aside{
+        padding-top: 50px;
+        position: absolute;
+        height: 800px;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        background-color: rgba(0, 0, 0, 0.85);
+    }
+    .homePanelRange-list{
+        position: relative;
+        top: 50%;
+
+    }
+}
+
+@media (max-width: 768px){
+    .bg-image {
+        width:50%;
+        height:50%;
+    }
+}
