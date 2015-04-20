@@ -1,6 +1,6 @@
-Authentication application using Node and Passport
+# Authentication application using Node and Passport
 
-# MEAN - MONGO/EXPRESS/ANGULAR/NODE Stack
+## MEAN - MONGO/EXPRESS/ANGULAR/NODE Stack
 
 This is a basic signup and authentication application built on the MEAN stack and using
 the passport package for authentication. Based on scotch.io tutorial with enhancements.
