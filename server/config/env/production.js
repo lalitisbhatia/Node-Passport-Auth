@@ -1,6 +1,6 @@
 
 module.exports = {
-    db: "your mongodb url",
+    db: "mongodb://rmlbmongo:titanic0215@oceanic.mongohq.com:10006/wwpilotdb",
     openIdAuth: {
       'facebookAuth': {
         'clientID': 'your App ID for prod', // your App ID
